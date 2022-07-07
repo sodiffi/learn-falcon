@@ -3,7 +3,7 @@ import time
 
 import pymongo
 start = time.time()
-client = pymongo.MongoClient("mongodb+srv://tas:ep0lVHTAYHXFOfIn@cluster0.lo0kf.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://tas:<password>@cluster0.lo0kf.mongodb.net/?retryWrites=true&w=majority")
 # use a database named "myDatabase"
 db = client.sample_training
 # FIND DOCUMENTS
