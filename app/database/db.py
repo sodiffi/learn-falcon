@@ -13,7 +13,7 @@ def test():
     conn = psycopg2.connect(conn_string)
     with conn:
         with conn.cursor() as curs:           
-            curs.execute('SELECT * FROM user')
+            curs.execute('SELECT * FROM test')
             rows = curs.fetchone()
     conn.close()
     return rows
