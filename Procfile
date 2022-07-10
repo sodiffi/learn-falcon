@@ -1,1 +1,1 @@
-web: waitress-serve app.main:app 
+web: waitress-serve app.__main__:app 
