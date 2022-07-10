@@ -1,1 +1,1 @@
-web: waitress-serve app.main:app --log-file -
+web: waitress-serve app.main:app 
