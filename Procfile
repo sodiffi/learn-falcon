@@ -1,1 +1,1 @@
-web: waitress-serve app.__main__:app 
+web: waitress-serve --port=$PORT app.__main__:app 
