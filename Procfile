@@ -1,0 +1,1 @@
+web: waitress-serve app.main:app --log-file -
