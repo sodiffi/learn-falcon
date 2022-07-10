@@ -3,7 +3,7 @@ from falcon import testing
 import msgpack
 import pytest
 from unittest.mock import mock_open, call
-from app.main import app
+from app.__main__ import app
 
 
 @pytest.fixture
