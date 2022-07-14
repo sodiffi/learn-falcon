@@ -15,7 +15,7 @@ app.add_route('/heroku', heroku)
 app.add_route('/mysql',mysqldb)
 app.add_route('/mongo',mongodb)
 
-# waitress-serve --port=8000 app.main:app
+# waitress-serve --port=8000 app.__main__:app
 if __name__ == '__main__':
     with make_server('', 8000, app) as httpd:
         print('Serving on port 8000...')
