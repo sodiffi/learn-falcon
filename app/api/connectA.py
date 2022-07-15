@@ -1,7 +1,8 @@
 import imp
 import json
 import falcon
-from ..database import db
+from ..database import db, fordb
+
 
 class ConnectR:
     _CHUNK_SIZE_BYTES = 4096
@@ -16,5 +17,5 @@ class ConnectR:
             ]
         }
 
-        resp.text = json.dumps(data, ensure_ascii=False)
+        resp.text = data
         resp.status=falcon.HTTP_200
